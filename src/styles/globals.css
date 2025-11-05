@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0A4ABF;
+  --secondary: #1E2A3A;
+  --accent: #00B87C;
+  --neutral: #F4F7FA;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply min-h-screen bg-white text-secondary antialiased;
+  }
+
+  /* Minimum text size for accessibility */
+  p, span, a, li {
+    @apply text-base; /* 16px */
+  }
+}

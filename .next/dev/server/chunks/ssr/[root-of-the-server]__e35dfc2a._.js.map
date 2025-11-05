@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/invde/Desktop/IncluyeMeWEB/src/app/page.tsx"],"sourcesContent":["import { Home } from '@/components/Home';\r\n\r\nexport default function Page() {\r\n  return <Home />;\r\n}"],"names":[],"mappings":";;;;;;;;;;;;AAEe,SAAS;IACtB,qBAAO,8OAAC;;;;;AACV","debugId":null}}]
+}
