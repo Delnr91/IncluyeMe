@@ -124,10 +124,10 @@ export const DonationForm = () => {
 
 
   return (
-    <div id="formulario-donacion-wrapper" className="bg-white p-8 md:p-10 rounded-lg shadow-2xl border border-neutral/50 text-secondary">
+    <div id="formulario-donacion-wrapper" className="bg-white p-6 sm:p-8 md:p-10 rounded-lg shadow-2xl border border-neutral/50 text-secondary">
       {paso === 'monto' && (
         <div>
-          <h3 className="text-3xl font-bold text-secondary text-center mb-4">¿Cuánto quieres aportar?</h3> {/* Título corregido */}
+          <h3 className="text-2xl sm:text-3xl font-bold text-secondary text-center mb-4">¿Cuánto quieres aportar?</h3> {/* Título corregido */}
           <p className="text-center text-secondary/70 mb-8">Elige un monto o personaliza tu donación</p>
 
           <div className="grid grid-cols-2 gap-4 mb-6">
@@ -135,7 +135,7 @@ export const DonationForm = () => {
               <label 
                 key={montoOpt}
                 htmlFor={`monto-${montoOpt}`}
-                className={`relative flex flex-col items-center justify-center p-4 rounded-lg border-2 cursor-pointer 
+                className={`relative flex flex-col items-center justify-center p-3 sm:p-4 rounded-lg border-2 cursor-pointer 
                            ${formData.monto === montoOpt ? 'border-primary bg-primary/10' : 'border-neutral hover:border-primary/50'}`}
               >
                 <input
@@ -147,14 +147,14 @@ export const DonationForm = () => {
                   onChange={handleMontoChange}
                   className="sr-only"
                 />
-                <span className="text-2xl font-bold text-secondary">
+                <span className="text-xl sm:text-2xl font-bold text-secondary">
                   {montoOpt === "Otro" ? "Otro" : `$${parseInt(montoOpt).toLocaleString('es-CL')} CLP`}
                 </span>
-                <span className="text-sm text-secondary/70 mt-1">
-                  {montoOpt === "2000" && "1 mes tutor para 1 persona"}
-                  {montoOpt === "5000" && "Módulo psicología"}
-                  {montoOpt === "10000" && "Capacitación 5 cuidadores"}
-                  {montoOpt === "Otro" && "Tu cantidad personalizada"}
+                <span className="text-xs sm:text-sm text-secondary/70 mt-1 text-center">
+                  {montoOpt === "2000" && "Impulsa un plan de autonomía"}
+                  {montoOpt === "5000" && "Kit de Bienestar Emocional"}
+                  {montoOpt === "10000" && "Fortalece una red de apoyo"}
+                  {montoOpt === "Otro" && "Construye el ecosistema"}
                 </span>
               </label>
             ))}
@@ -194,7 +194,7 @@ export const DonationForm = () => {
 
       {paso === 'datos' && (
         <form onSubmit={handleSubmit(handleConfirmacion)} className="space-y-6">
-          <h3 className="text-3xl font-bold text-secondary text-center mb-4">Ingresa tus Datos</h3>
+          <h3 className="text-2xl sm:text-3xl font-bold text-secondary text-center mb-4">Ingresa tus Datos</h3>
           <p className="text-center text-secondary/70 mb-8">Para procesar tu donación y enviarte las actualizaciones</p>
 
           <div>
@@ -264,11 +264,11 @@ export const DonationForm = () => {
       {paso === 'confirmacion' && (
         <div className="text-center">
           <CheckCircle size={80} className="text-accent mx-auto mb-6" />
-          <h3 className="text-3xl font-bold text-secondary mb-4">¡Gracias, {formData.nombre}! 💚</h3>
+          <h3 className="text-2xl sm:text-3xl font-bold text-secondary mb-4">¡Gracias, {formData.nombre}! 💚</h3>
           
           <div className="bg-primary/10 border border-primary/20 p-6 rounded-lg mb-8">
             <p className="text-secondary/80 text-lg">Tu aporte:</p>
-            <p className="text-4xl font-bold text-primary mt-2">${parseInt(displayMonto).toLocaleString('es-CL')} CLP</p>
+            <p className="text-3xl sm:text-4xl font-bold text-primary mt-2">${parseInt(displayMonto).toLocaleString('es-CL')} CLP</p>
             <p className="text-md text-accent font-semibold mt-3">
               Con tu aporte financias {impactoEspecifico(montoSeleccionado === 'Otro' ? 'personalizado' : montoSeleccionado)}.
             </p>

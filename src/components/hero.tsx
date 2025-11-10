@@ -9,11 +9,11 @@ export const Hero = () => {
     >
       <div className="absolute inset-0 bg-black/60" />
       <div className="container relative z-10 mx-auto px-6 text-center">
-        <h1 className="text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
-          Más del 56% de los contratos para personas con discapacidad fracasan. Es hora de cambiar la inclusión por retención.
+        <h1 className="text-2xl font-bold leading-tight sm:text-4xl md:text-5xl lg:text-6xl">
+          Diseñamos el primer ecosistema digital de Chile para la retención laboral de personas con discapacidad.
         </h1>
         <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto">
-          IncluyeMeApp: El tutor digital 360° que garantiza la permanencia, el bienestar y el cumplimiento legal de la inclusión laboral en Chile.
+          Nuestra plataforma multiparte conecta en tiempo real al trabajador, su red de apoyo y la empresa para reducir la deserción y asegurar una inclusión exitosa.
         </p>
         <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
           <Button 

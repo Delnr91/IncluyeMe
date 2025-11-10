@@ -320,6 +320,10 @@ body {
   overflow: hidden;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
 }
@@ -547,6 +551,10 @@ body {
   width: 100%;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .min-w-\[200px\] {
   min-width: 200px;
 }
@@ -654,6 +662,10 @@ body {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-3 {
+  gap: .75rem;
 }
 
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
@@ -915,6 +927,11 @@ body {
   padding-bottom: 2rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1042,6 +1059,14 @@ body {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-white\/80 {
+  color: #fffc;
+}
+
+.text-white\/90 {
+  color: #ffffffe6;
 }
 
 .underline {
@@ -1233,6 +1258,10 @@ body {
     padding: 2rem;
   }
 
+  .sm\:p-4 {
+    padding: 1rem;
+  }
+
   .sm\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -1243,9 +1272,29 @@ body {
     padding-bottom: 8rem;
   }
 
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .sm\:text-sm {
+    font-size: .875rem;
+    line-height: 1.25rem;
   }
 }
 

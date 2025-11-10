@@ -1,11 +1,11 @@
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 export const metadata = {
-  title: 'IncluyeMeApp | Solución para la Retención e Inclusión Laboral en Chile',
-  description: 'Combatimos el 56% de deserción laboral en PCD con tecnología. Garantiza cumplimiento (Ley 21.015, Ley Karín) y bienestar. Dona o únete a nuestra misión.',
+  title: 'IncluyeMeApp | Ecosistema Digital para la Retención Laboral de Personas con Discapacidad',
+  description: 'El primer ecosistema digital de Chile para la retención laboral de personas con discapacidad. Conectamos al trabajador, su red de apoyo y la empresa en tiempo real para reducir la deserción.',
   openGraph: {
-    title: 'IncluyeMeApp | Retención e Inclusión Laboral',
-    description: 'Tecnología para garantizar el bienestar y la permanencia de personas con discapacidad en el trabajo.',
+    title: 'IncluyeMeApp | Ecosistema Digital para la Retención e Inclusión Laboral',
+    description: 'Plataforma multiparte que conecta en tiempo real al trabajador, su red de apoyo y la empresa, garantizando el éxito de la inclusión.',
     url: 'https://www.tudominio.cl', // Reemplaza con tu dominio real
     siteName: 'IncluyeMeApp',
     images: [

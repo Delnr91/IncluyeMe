@@ -18,7 +18,7 @@ export const Header = () => {
   return (
     <>
       <header className="sticky top-0 z-50 w-full border-b border-neutral bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container flex h-16 items-center justify-between px-6">
           <Link href="/" className="flex items-center">
             <span className="text-2xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
               IncluyeMe

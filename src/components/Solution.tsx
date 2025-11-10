@@ -20,22 +20,22 @@ export const Solution = () => {
     {
       icon: <Users className="w-8 h-8 text-accent" />,
       title: "Trabajador PCD",
-      description: "Tutor digital, comunicación accesible y chatbot de apoyo 'Ayudín' para una gestión autónoma de tareas y bienestar."
+      description: "Herramientas para la autonomía, gestión de rutinas y desarrollo de habilidades psicosociales para una transición exitosa a la vida laboral independiente."
     },
     {
       icon: <Shield className="w-8 h-8 text-accent" />,
-      title: "Cuidador",
-      description: "Monitoreo no intrusivo con geocercas y alertas en tiempo real para garantizar la seguridad y tranquilidad."
+      title: "Red de Apoyo y Empresa",
+      description: "Sistema de acompañamiento multiparte que conecta en tiempo real a la familia, cuidadores, empleador y especialistas de apoyo de forma segura."
     },
     {
       icon: <Building className="w-8 h-8 text-accent" />,
-      title: "Empresa",
-      description: "Motor de cumplimiento legal, gestión de ajustes razonables y un canal de denuncia digital seguro."
+      title: "Cumplimiento y Prevención",
+      description: "Digitalización y acceso a protocolos de las leyes 21.015 y Karín, con canales seguros para la prevención y denuncia del acoso laboral."
     },
     {
       icon: <HeartPulse className="w-8 h-8 text-accent" />,
-      title: "Especialista",
-      description: "Acceso a herramientas de bienestar como primeros auxilios psicológicos y ejercicios de relajación."
+      title: "Salud Mental y Bienestar",
+      description: "Módulo con herramientas de primeros auxilios psicológicos, manejo del estrés y registro del estado emocional para abordar causas de deserción."
     }
   ];
 

@@ -30,11 +30,11 @@ export const Problem = () => {
       
       <div className="container relative z-10 mx-auto px-6 text-white">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl font-bold md:text-5xl">
-            El Problema: "No es un problema de capacidad, es de acompañamiento."
+          <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
+            El Problema: No es falta de capacidad, es falta de un ecosistema de apoyo.
           </h2>
           <p className="mt-6 text-lg text-neutral/80">
-            La inclusión real no termina con la firma de un contrato. Comienza el verdadero desafío: la permanencia. Historias como la de María, llena de potencial pero abandonada a su suerte, o la del joven en Osorno, cuyo sueño fue truncado por falta de apoyo, son el reflejo de un sistema que falla en lo más importante: el seguimiento continuo.
+            La inclusión real no termina con un contrato. Ahí empieza el verdadero desafío: la retención. La alta tasa de deserción se debe a la falta de un sistema conectado que apoye al trabajador en su transición, guíe a la empresa en el cumplimiento y ofrezca herramientas para el bienestar diario.
           </p>
         </div>
 

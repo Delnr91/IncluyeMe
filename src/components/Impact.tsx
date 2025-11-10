@@ -44,7 +44,7 @@ export const Impact = () => {
           </div>
           <p className="text-xl text-neutral/80 mb-2">KPI Principal</p>
           <h3 className="text-3xl font-bold">
-            Reducir en <span className="text-accent">40%</span> la deserción laboral de PCD
+            Reducir en <span className="text-accent">10%</span> la deserción laboral de PCD
           </h3>
         </div>
 

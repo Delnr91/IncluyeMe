@@ -12,7 +12,7 @@ export const Trust = () => {
       
       <div className="container relative z-10 mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl font-bold md:text-5xl text-secondary">
+          <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl text-secondary">
             Construido sobre Confianza y Seguridad.
           </h2>
         </div>
@@ -25,22 +25,22 @@ export const Trust = () => {
               <li className="flex items-start gap-4">
                 <Lock className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-semibold text-secondary">Ley 21.719 (Ley Karin)</h4>
-                  <p className="text-sm text-secondary/80">Plataforma diseñada para prevenir, investigar y sancionar el acoso laboral, sexual y la violencia.</p>
+                  <h4 className="font-semibold text-secondary">Leyes 21.015 y Karín</h4>
+                  <p className="text-sm text-secondary/80">Digitalizamos y hacemos accesibles los protocolos de cumplimiento, proporcionando canales seguros para la prevención y denuncia del acoso.</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <Fingerprint className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-semibold text-secondary">Cifrado de Extremo a Extremo (E2E)</h4>
-                  <p className="text-sm text-secondary/80">Toda la comunicación y datos sensibles están cifrados, garantizando la máxima privacidad.</p>
+                  <h4 className="font-semibold text-secondary">Conexión Segura y Coordinada</h4>
+                  <p className="text-sm text-secondary/80">Garantizamos una comunicación cifrada y en tiempo real entre el trabajador, su red de apoyo y la empresa.</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <Accessibility className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-semibold text-secondary">Estándares WCAG 2.1 AAA</h4>
-                  <p className="text-sm text-secondary/80">Comprometidos con el más alto nivel de accesibilidad web para todos los usuarios.</p>
+                  <h4 className="font-semibold text-secondary">Perfiles de Adaptabilidad</h4>
+                  <p className="text-sm text-secondary/80">Personalizamos la plataforma para distintos tipos de discapacidad (cognitiva, motora, sensorial), asegurando una experiencia de usuario universal.</p>
                 </div>
               </li>
             </ul>
