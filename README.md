@@ -1,7 +1,7 @@
 # IncluyeMeApp | Ecosistema de Retención Laboral
 
 <div align="center">
-  <img src="public/images/Isabeu%20Valverde.jpeg" alt="Logo de IncluyeMeApp" width="120" />
+  <img src="public/images/logonormal.png" alt="Logo de IncluyeMeApp" width="120" />
 </div>
 
 <h3 align="center">
