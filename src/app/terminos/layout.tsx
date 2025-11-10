@@ -1,5 +1,3 @@
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 export const metadata = {
@@ -23,11 +21,11 @@ export default function TermsLayout({
 }) {
   return (
     <>
-      <Header />
+      
       <main className="flex-grow py-16 sm:py-24"> {/* Añadir padding a main */}
         {children}
       </main>
-      <Footer />
+      
       {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />}
     </>
   )

@@ -23,11 +23,11 @@ export default function PrivacyLayout({
 }) {
   return (
     <>
-      <Header />
+      
       <main className="flex-grow py-16 sm:py-24"> {/* Añadir padding a main */}
         {children}
       </main>
-      <Footer />
+      
       {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />}
     </>
   )
