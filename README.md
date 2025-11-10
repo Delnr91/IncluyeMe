@@ -1,7 +1,7 @@
 # IncluyeMeApp | Ecosistema de Retención Laboral
 
 <div align="center">
-  <img src="public/images/logonormal.png" alt="Logo de IncluyeMeApp" width="120" />
+  <img src="public/logonormal.png" alt="Logo de IncluyeMeApp" width="120" />
 </div>
 
 <h3 align="center">
@@ -61,8 +61,8 @@ Asegúrate de tener instalado Node.js (versión 18.x o superior).
 
 1.  Clona el repositorio:
     ```sh
-    git clone https://github.com/tu-usuario/incluyeme-web.git
-    cd incluyeme-web
+    git clone https://github.com/Delnr91/IncluyeMe.git
+    cd IncluyeMe
     ```
 
 2.  Instala las dependencias del proyecto:
@@ -109,7 +109,7 @@ Distribuido bajo la Licencia MIT. Consulta el archivo `LICENSE` para más inform
 
 **Email:** incluyemeapp@gmail.com
 
-**Enlace del Proyecto:** https://https://github.com/Delnr91/IncluyeMe
+**Enlace del Proyecto:** https://github.com/Delnr91/IncluyeMe
 
 ---
 
