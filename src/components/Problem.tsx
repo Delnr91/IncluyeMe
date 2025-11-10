@@ -24,7 +24,7 @@ export const Problem = () => {
       id="problema" 
       // CAMBIO: Usamos CSS para el fondo fijo, igual que en Hero
       style={{ backgroundImage: "url('/images/backgrounds/problem.png')" }}
-      className="relative py-20 sm:py-32 bg-cover bg-center bg-fixed"
+      className="relative py-20 sm:py-32 bg-cover bg-center md:bg-fixed"
     >
       <div className="absolute inset-0 bg-secondary/80" />
       
