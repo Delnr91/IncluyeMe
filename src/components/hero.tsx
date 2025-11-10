@@ -4,7 +4,6 @@ export const Hero = () => {
   return (
     <section 
       id="hero" 
-      // CAMBIO: Usamos CSS para un fondo fijo y elegante
       style={{ backgroundImage: "url('/images/backgrounds/hero.png')" }}
       className="relative h-[90vh] min-h-[600px] flex items-center justify-center text-white bg-cover bg-center bg-fixed"
     >
@@ -18,7 +17,7 @@ export const Hero = () => {
         </p>
         <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
           <Button 
-            href="#donar" 
+            href="/donar" // Apunta a la nueva ruta
             size="lg" 
             variant="primary" 
             className="!bg-accent hover:!bg-accent/90"

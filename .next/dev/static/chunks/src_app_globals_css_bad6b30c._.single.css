@@ -340,10 +340,6 @@ body {
   inset: 0;
 }
 
-.left-0 {
-  left: 0;
-}
-
 .top-0 {
   top: 0;
 }
@@ -383,6 +379,10 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -415,6 +415,14 @@ body {
   margin-bottom: 2rem;
 }
 
+.ml-2 {
+  margin-left: .5rem;
+}
+
+.mr-2 {
+  margin-right: .5rem;
+}
+
 .mt-1 {
   margin-top: .25rem;
 }
@@ -425,6 +433,10 @@ body {
 
 .mt-2 {
   margin-top: .5rem;
+}
+
+.mt-3 {
+  margin-top: .75rem;
 }
 
 .mt-4 {
@@ -475,6 +487,10 @@ body {
   height: 4rem;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .h-48 {
   height: 12rem;
 }
@@ -511,6 +527,10 @@ body {
   min-height: 100vh;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
 .w-48 {
   width: 12rem;
 }
@@ -539,12 +559,24 @@ body {
   max-width: 48rem;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .max-w-5xl {
   max-width: 64rem;
 }
 
+.max-w-6xl {
+  max-width: 72rem;
+}
+
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
 }
 
 .flex-shrink-0 {
@@ -564,8 +596,28 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -604,6 +656,12 @@ body {
   gap: 2rem;
 }
 
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(.75rem * var(--tw-space-y-reverse));
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -618,6 +676,10 @@ body {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.rounded {
+  border-radius: .25rem;
 }
 
 .rounded-full {
@@ -662,6 +724,19 @@ body {
   border-color: #f4f7fa33;
 }
 
+.border-neutral\/50 {
+  border-color: #f4f7fa80;
+}
+
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(10 74 191 / var(--tw-border-opacity, 1));
+}
+
+.border-primary\/20 {
+  border-color: #0a4abf33;
+}
+
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
@@ -678,11 +753,6 @@ body {
 .\!bg-accent {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(0 184 124 / var(--tw-bg-opacity, 1)) !important;
-}
-
-.bg-accent {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 184 124 / var(--tw-bg-opacity, 1));
 }
 
 .bg-background\/80 {
@@ -706,6 +776,14 @@ body {
   background-color: rgb(10 74 191 / var(--tw-bg-opacity, 1));
 }
 
+.bg-primary\/10 {
+  background-color: #0a4abf1a;
+}
+
+.bg-primary\/5 {
+  background-color: #0a4abf0d;
+}
+
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(30 42 58 / var(--tw-bg-opacity, 1));
@@ -721,6 +799,11 @@ body {
 
 .bg-transparent {
   background-color: #0000;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-white\/10 {
@@ -832,6 +915,14 @@ body {
   padding-bottom: 2rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -871,6 +962,11 @@ body {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: .75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -900,6 +996,10 @@ body {
   color: #f4f7fa99;
 }
 
+.text-neutral\/70 {
+  color: #f4f7fab3;
+}
+
 .text-neutral\/80 {
   color: #f4f7facc;
 }
@@ -909,9 +1009,9 @@ body {
   color: rgb(10 74 191 / var(--tw-text-opacity, 1));
 }
 
-.text-red-400 {
+.text-red-500 {
   --tw-text-opacity: 1;
-  color: rgb(248 113 113 / var(--tw-text-opacity, 1));
+  color: rgb(239 68 68 / var(--tw-text-opacity, 1));
 }
 
 .text-secondary {
@@ -923,8 +1023,16 @@ body {
   color: #1e2a3a99;
 }
 
+.text-secondary\/70 {
+  color: #1e2a3ab3;
+}
+
 .text-secondary\/80 {
   color: #1e2a3acc;
+}
+
+.text-secondary\/90 {
+  color: #1e2a3ae6;
 }
 
 .text-transparent {
@@ -1020,6 +1128,10 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:border-primary\/50:hover {
+  border-color: #0a4abf80;
+}
+
 .hover\:\!bg-accent\/90:hover {
   background-color: #00b87ce6 !important;
 }
@@ -1055,33 +1167,24 @@ body {
   text-decoration-line: underline;
 }
 
-.focus\:not-sr-only:focus {
-  clip: auto;
-  white-space: normal;
-  width: auto;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  position: static;
-  overflow: visible;
-}
-
-.focus\:absolute:focus {
-  position: absolute;
-}
-
-.focus\:z-50:focus {
-  z-index: 50;
-}
-
 .focus\:border-accent:focus {
   --tw-border-opacity: 1;
   border-color: rgb(0 184 124 / var(--tw-border-opacity, 1));
 }
 
+.focus\:border-primary:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(10 74 191 / var(--tw-border-opacity, 1));
+}
+
 .focus\:ring-accent:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(0 184 124 / var(--tw-ring-opacity, 1));
+}
+
+.focus\:ring-primary:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(10 74 191 / var(--tw-ring-opacity, 1));
 }
 
 .focus-visible\:outline-none:focus-visible {
@@ -1126,6 +1229,10 @@ body {
     flex-direction: row;
   }
 
+  .sm\:p-8 {
+    padding: 2rem;
+  }
+
   .sm\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -1155,12 +1262,25 @@ body {
     height: 450px;
   }
 
+  .md\:w-auto {
+    width: auto;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:text-5xl {
@@ -1186,6 +1306,10 @@ body {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 
   .lg\:text-6xl {

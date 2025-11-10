@@ -6,15 +6,13 @@ import { Solution } from '@/components/Solution';
 import { Impact } from '@/components/Impact';
 import { Trust } from '@/components/Trust';
 import { Contact } from '@/components/Contact';
+// Las importaciones de DonationStorytelling y DonationForm ya no son necesarias aquí
 
 export default function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:z-50 top-0 left-0 bg-accent text-white p-4">
-        Saltar al contenido principal
-      </a>
-      <Header />
-      <main id="main-content" className="flex-grow">
+      
+      <main className="flex-grow">
         <Hero />
         <Problem />
         <Solution />
@@ -22,7 +20,7 @@ export default function LandingPage() {
         <Trust />
         <Contact />
       </main>
-      <Footer />
+    
     </div>
   );
 }

@@ -44,22 +44,38 @@ const buttonVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_
         size: 'default'
     }
 });
-const Button = ({ className, variant, size, href, children, ...props })=>{
-    const Comp = href ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"] : 'button';
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(Comp, {
-        href: href,
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["twMerge"])(buttonVariants({
-            variant,
-            size,
-            className
-        })),
-        ...props,
-        children: children
-    }, void 0, false, {
-        fileName: "[project]/src/components/ui/Button.tsx",
-        lineNumber: 37,
-        columnNumber: 5
-    }, ("TURBOPACK compile-time value", void 0));
+const Button = ({ className, variant, size, children, ...props })=>{
+    const classes = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["twMerge"])(buttonVariants({
+        variant,
+        size,
+        className
+    }));
+    // Type guard para distinguir entre ButtonAsButtonProps y ButtonAsLinkProps
+    if ('href' in props && props.href !== undefined) {
+        // Si href está presente, renderizamos como Link
+        const { href, ...rest } = props; // Casteamos para TypeScript
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+            href: href,
+            className: classes,
+            ...rest,
+            children: children
+        }, void 0, false, {
+            fileName: "[project]/src/components/ui/Button.tsx",
+            lineNumber: 56,
+            columnNumber: 7
+        }, ("TURBOPACK compile-time value", void 0));
+    } else {
+        // Si href no está presente, renderizamos como <button>
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+            className: classes,
+            ...props,
+            children: children
+        }, void 0, false, {
+            fileName: "[project]/src/components/ui/Button.tsx",
+            lineNumber: 63,
+            columnNumber: 7
+        }, ("TURBOPACK compile-time value", void 0));
+    }
 };
 }),
 "[project]/src/components/Home.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
@@ -87,7 +103,8 @@ const Home = ()=>{
                         alt: "Fondo animado de una red neuronal conectando ideas.",
                         fill: true,
                         priority: true,
-                        className: "object-cover"
+                        className: "object-cover",
+                        unoptimized: true
                     }, void 0, false, {
                         fileName: "[project]/src/components/Home.tsx",
                         lineNumber: 9,
@@ -97,7 +114,7 @@ const Home = ()=>{
                         className: "absolute inset-0 bg-black/50"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Home.tsx",
-                        lineNumber: 16,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
@@ -114,7 +131,7 @@ const Home = ()=>{
                         children: "IncluyeMe"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Home.tsx",
-                        lineNumber: 22,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -128,7 +145,7 @@ const Home = ()=>{
                                 children: "Ir al Proyecto"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Home.tsx",
-                                lineNumber: 29,
+                                lineNumber: 30,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$Button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
@@ -139,19 +156,19 @@ const Home = ()=>{
                                 children: "Donar Ahora"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Home.tsx",
-                                lineNumber: 40,
+                                lineNumber: 41,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Home.tsx",
-                        lineNumber: 27,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Home.tsx",
-                lineNumber: 20,
+                lineNumber: 21,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
@@ -176,8 +193,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Home$2e
 function Page() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Home$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Home"], {}, void 0, false, {
         fileName: "[project]/src/app/page.tsx",
-        lineNumber: 4,
-        columnNumber: 10
+        lineNumber: 5,
+        columnNumber: 5
     }, this);
 }
 }),

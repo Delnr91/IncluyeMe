@@ -26,20 +26,43 @@ const buttonVariants = cva(
   }
 );
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof buttonVariants> {
-  href?: string;
+// Propiedades comunes que ambos tipos de botón pueden tener
+interface CommonProps extends VariantProps<typeof buttonVariants> {
+  className?: string;
+  children?: React.ReactNode;
 }
 
-export const Button = ({ className, variant, size, href, children, ...props }: ButtonProps) => {
-  const Comp = href ? Link : 'button';
-  
-  return (
-    <Comp
-      href={href!}
-      className={twMerge(buttonVariants({ variant, size, className }))}
-      {...props}
-    >
-      {children}
-    </Comp>
-  );
+// Propiedades para cuando el botón se renderiza como un <button>
+interface ButtonAsButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>, CommonProps {
+  href?: undefined; // Asegura que href no esté presente
+}
+
+// Propiedades para cuando el botón se renderiza como un <Link>
+interface ButtonAsLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement>, CommonProps {
+  href: string; // Asegura que href siempre esté presente y sea un string
+}
+
+// Unión discriminada: ButtonProps puede ser uno de los dos tipos anteriores
+type ButtonProps = ButtonAsButtonProps | ButtonAsLinkProps;
+
+export const Button = ({ className, variant, size, children, ...props }: ButtonProps) => {
+  const classes = twMerge(buttonVariants({ variant, size, className }));
+
+  // Type guard para distinguir entre ButtonAsButtonProps y ButtonAsLinkProps
+  if ('href' in props && props.href !== undefined) {
+    // Si href está presente, renderizamos como Link
+    const { href, ...rest } = props as ButtonAsLinkProps; // Casteamos para TypeScript
+    return (
+      <Link href={href} className={classes} {...rest}>
+        {children}
+      </Link>
+    );
+  } else {
+    // Si href no está presente, renderizamos como <button>
+    return (
+      <button className={classes} {...(props as ButtonAsButtonProps)}>
+        {children}
+      </button>
+    );
+  }
 };

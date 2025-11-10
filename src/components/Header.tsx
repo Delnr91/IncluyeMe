@@ -1,18 +1,18 @@
-'use client'; // Necesario para la interactividad (useState)
+'use client'; 
 
 import { useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
-import { Menu, X } from 'lucide-react'; // Importamos el icono X
+import { Menu, X } from 'lucide-react';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Problema', href: '#problema' },
-    { name: 'Solución', href: '#solucion' },
-    { name: 'Impacto', href: '#impacto' },
-    { name: 'Contacto', href: '#contacto' },
+    { name: 'Problema', href: '/proyecto#problema' }, // CAMBIO: Ruta completa
+    { name: 'Solución', href: '/proyecto#solucion' }, // CAMBIO: Ruta completa
+    { name: 'Impacto', href: '/proyecto#impacto' },   // CAMBIO: Ruta completa
+    { name: 'Contacto', href: '/proyecto#contacto' }, // CAMBIO: Ruta completa
   ];
 
   return (
@@ -33,7 +33,7 @@ export const Header = () => {
                 </Link>
               ))}
             </nav>
-            <Button href="#donar" variant="primary" className="!bg-accent hover:!bg-accent/90">
+            <Button href="/donar" variant="primary" className="!bg-accent hover:!bg-accent/90">
               Donar Ahora
             </Button>
           </div>
@@ -56,12 +56,12 @@ export const Header = () => {
                 key={link.name} 
                 href={link.href} 
                 className="text-2xl font-medium text-secondary transition-colors hover:text-primary"
-                onClick={() => setIsMenuOpen(false)} // Cierra el menú al hacer clic
+                onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}
               </Link>
             ))}
-            <Button href="#donar" size="lg" className="!bg-accent hover:!bg-accent/90" onClick={() => setIsMenuOpen(false)}>
+            <Button href="/donar" size="lg" className="!bg-accent hover:!bg-accent/90" onClick={() => setIsMenuOpen(false)}>
               Donar Ahora
             </Button>
           </nav>

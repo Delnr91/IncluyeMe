@@ -39,27 +39,24 @@ export const Contact = () => {
           </h2>
         </div>
 
-        {/* CTA DUAL - ACTUALIZADO */}
+        {/* CTA DUAL */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
           {/* Petición Donantes */}
-          <div id="donar" className="bg-white/10 backdrop-blur-sm p-8 rounded-lg border border-white/20 text-center">
+          <div id="donar-cta" className="bg-white/10 backdrop-blur-sm p-8 rounded-lg border border-white/20 text-center">
             <h3 className="text-2xl font-bold mb-4">Para Donantes e Inversionistas</h3>
-            {/* TEXTO ACTUALIZADO */}
             <p className="mb-6 text-neutral/80">
               Tu apoyo es fundamental para dar el primer paso. Cada contribución nos acerca a la construcción del MVP, la tecnología que transformará el futuro laboral de miles de personas. ¡Súmate al cambio!
             </p>
-            <Button href="https://www.gofundme.com" target="_blank" size="lg" className="!bg-accent hover:!bg-accent/90">
+            <Button href="/donar" size="lg" className="!bg-accent hover:!bg-accent/90">
               Donar Ahora
             </Button>
           </div>
           {/* Petición Socios */}
           <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg border border-white/20 text-center">
             <h3 className="text-2xl font-bold mb-4">Para Socios y Empresas</h3>
-            {/* TEXTO ACTUALIZADO */}
             <p className="mb-6 text-neutral/80">
               Buscamos alianzas estratégicas para financiar y dar vida a nuestra plataforma. Si tu organización quiere liderar el futuro de la inclusión laboral, contáctanos y exploremos oportunidades de inversión.
             </p>
-            {/* BOTÓN ACTUALIZADO */}
             <Button href="#formulario-contacto" size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/20">
               Contactar para Alianza
             </Button>
@@ -79,7 +76,7 @@ export const Contact = () => {
                 aria-required="true"
                 {...register('fullName')}
               />
-              {errors.fullName && <p className="text-red-400 text-sm mt-1">{errors.fullName.message}</p>}
+              {errors.fullName && <p className="text-red-500 text-sm mt-1">{errors.fullName.message}</p>}
             </div>
             <div>
               <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
@@ -90,7 +87,7 @@ export const Contact = () => {
                 aria-required="true"
                 {...register('email')}
               />
-              {errors.email && <p className="text-red-400 text-sm mt-1">{errors.email.message}</p>}
+              {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
             </div>
             <div>
               <label htmlFor="subject" className="block text-sm font-medium mb-2">Asunto</label>
@@ -106,7 +103,7 @@ export const Contact = () => {
                 <option value="prensa" className="bg-secondary">Prensa y Medios</option>
                 <option value="otro" className="bg-secondary">Otro</option>
               </select>
-              {errors.subject && <p className="text-red-400 text-sm mt-1">{errors.subject.message}</p>}
+              {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject.message}</p>}
             </div>
             <div>
               <label htmlFor="message" className="block text-sm font-medium mb-2">Mensaje</label>
@@ -117,7 +114,7 @@ export const Contact = () => {
                 aria-required="true"
                 {...register('message')}
               />
-              {errors.message && <p className="text-red-400 text-sm mt-1">{errors.message.message}</p>}
+              {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
             </div>
             <div className="text-center">
               <Button type="submit" size="lg" className="!bg-accent hover:!bg-accent/90">

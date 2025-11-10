@@ -12,6 +12,7 @@ export const Home = () => {
           fill
           priority
           className="object-cover"
+          unoptimized
         />
         <div className="absolute inset-0 bg-black/50" />
       </div>
@@ -25,9 +26,9 @@ export const Home = () => {
         </h1>
         
         <div className="flex flex-col gap-4 sm:flex-row">
-          {/* Botón secundario - CORREGIDO */}
+          {/* Botón "Ir al Proyecto" */}
           <Button 
-            href="/proyecto" // <-- ¡Este es el cambio!
+            href="/proyecto" 
             size="lg"
             variant="outline"
             className="min-w-[200px] text-center text-lg font-semibold border-2 border-white text-white 
@@ -36,9 +37,9 @@ export const Home = () => {
             Ir al Proyecto
           </Button>
           
-          {/* Botón primario (Donaciones) */}
+          {/* Botón Donar para la página de inicio */}
           <Button
-            href="/donar" // Ruta de ejemplo
+            href="/donar" // Apunta a la nueva ruta
             size="lg"
             variant="primary"
             className="min-w-[200px] text-center text-lg font-semibold !bg-accent hover:!bg-accent/90 

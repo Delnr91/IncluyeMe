@@ -10,9 +10,9 @@ export const Footer = () => {
             © {new Date().getFullYear()} IncluyeMeApp. Todos los derechos reservados.
           </p>
           <div className="mt-4 flex gap-6 sm:mt-0">
-            <Link href="/politica-privacidad" className="text-sm hover:underline text-neutral/80 hover:text-white">Política de Privacidad</Link>
-            <Link href="/terminos" className="text-sm hover:underline text-neutral/80 hover:text-white">Términos</Link>
-            <Link href="#contacto" className="text-sm hover:underline text-neutral/80 hover:text-white">Contacto</Link>
+            <Link href="/politica-privacidad" className="text-sm hover:underline text-neutral/80 hover:text-white">Política de Privacidad</Link> {/* CAMBIO */}
+            <Link href="/terminos" className="text-sm hover:underline text-neutral/80 hover:text-white">Términos</Link> {/* CAMBIO */}
+            <Link href="/proyecto#contacto" className="text-sm hover:underline text-neutral/80 hover:text-white">Contacto</Link> {/* CAMBIO: para apuntar a la sección de contacto en la landing */}
           </div>
         </div>
         
