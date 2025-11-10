@@ -1,7 +1,7 @@
 # IncluyeMeApp | Ecosistema de Retención Laboral
 
 <div align="center">
-  <img src="public/logonormal.png" alt="Logo de IncluyeMeApp" width="120" />
+  <img src="https://raw.githubusercontent.com/Delnr91/IncluyeMe/main/public/logonormal.png#gh-light-mode-only" alt="Logo de IncluyeMeApp" width="120" />
 </div>
 
 <h3 align="center">
