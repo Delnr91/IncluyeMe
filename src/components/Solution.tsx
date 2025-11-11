@@ -43,7 +43,7 @@ export const Solution = () => {
     <section 
       id="solucion"
       style={{ backgroundImage: "url('/images/backgrounds/solved.png')" }}
-      className="relative py-16 sm:py-24 bg-cover bg-center bg-fixed"
+      className="relative py-16 sm:py-24 bg-cover bg-center md:bg-fixed"
     >
       <div className="absolute inset-0 bg-background/80" />
 

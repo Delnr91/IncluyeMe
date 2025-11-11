@@ -5,7 +5,7 @@ export const Hero = () => {
     <section 
       id="hero" 
       style={{ backgroundImage: "url('/images/backgrounds/hero.png')" }}
-      className="relative h-[90vh] min-h-[600px] flex items-center justify-center text-white bg-cover bg-center bg-fixed"
+      className="relative h-[90vh] min-h-[600px] flex items-center justify-center text-white bg-cover bg-center md:bg-fixed"
     >
       <div className="absolute inset-0 bg-black/60" />
       <div className="container relative z-10 mx-auto px-6 text-center">
