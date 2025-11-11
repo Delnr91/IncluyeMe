@@ -6,7 +6,7 @@ export const DonationSection = () => {
     <section 
       id="donaciones" 
       style={{ backgroundImage: "url('/images/backgrounds/fondodonate.png')" }} 
-      className="relative py-12 sm:py-24 bg-cover bg-center md:bg-fixed text-white"
+      className="relative py-12 sm:py-24 bg-cover bg-center lg:bg-fixed text-white"
     >
       <div className="absolute inset-0 bg-secondary/80" /> {/* Overlay oscuro */}
       

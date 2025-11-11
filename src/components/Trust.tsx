@@ -6,7 +6,7 @@ export const Trust = () => {
     <section 
       id="confianza"
       style={{ backgroundImage: "url('/images/backgrounds/fondo1.png')" }}
-      className="relative py-20 sm:py-32 bg-cover bg-center md:bg-fixed"
+      className="relative py-20 sm:py-32 bg-cover bg-center lg:bg-fixed"
     >
       <div className="absolute inset-0 bg-background/80" />
       
