@@ -1,7 +1,3 @@
 {
-  "/donar/page": "app/donar/page.js",
-  "/page": "app/page.js",
-  "/politica-privacidad/page": "app/politica-privacidad/page.js",
-  "/proyecto/page": "app/proyecto/page.js",
-  "/terminos/page": "app/terminos/page.js"
+  "/page": "app/page.js"
 }

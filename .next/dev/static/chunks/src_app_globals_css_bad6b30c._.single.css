@@ -832,10 +832,6 @@ body {
   background-size: cover;
 }
 
-.bg-fixed {
-  background-attachment: fixed;
-}
-
 .bg-clip-text {
   -webkit-background-clip: text;
   background-clip: text;
@@ -1339,6 +1335,10 @@ body {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:bg-fixed {
+    background-attachment: fixed;
   }
 
   .lg\:text-left {

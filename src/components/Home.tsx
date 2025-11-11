@@ -5,8 +5,22 @@ export const Home = () => {
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden">
       {/* Background con overlay más oscuro para contraste */}
-      <div className="absolute inset-0 z-0">
-        <Image
+        {/* Video de fondo con overlay */}
+        <div className="absolute inset-0 z-0">
+        <video
+        autoPlay
+        loop
+        muted
+        suppressHydrationWarning
+        poster="/images/backgrounds/home-poster.png"
+        className="object-cover w-full h-full"
+        >
+        <source src="/images/backgrounds/home.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/50" />
+        </div>
+
+        {/*<Image
           src="/images/backgrounds/home.gif"
           alt="Fondo animado de una red neuronal conectando ideas."
           fill
@@ -15,7 +29,7 @@ export const Home = () => {
           // unoptimized // Eliminado para permitir la optimización de Next.js
         />
         <div className="absolute inset-0 bg-black/50" />
-      </div>
+      </div> */}
       
       {/* Contenido principal - con el ajuste vertical que hicimos */}
       <div className="container relative z-10 flex flex-col items-center px-4 text-center transform translate-y-16">
