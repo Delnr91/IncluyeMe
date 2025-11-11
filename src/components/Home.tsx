@@ -12,7 +12,7 @@ export const Home = () => {
           fill
           priority
           className="object-cover"
-          unoptimized
+          // unoptimized // Eliminado para permitir la optimización de Next.js
         />
         <div className="absolute inset-0 bg-black/50" />
       </div>
