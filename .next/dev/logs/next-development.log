@@ -1,8 +1,539 @@
-[00:00:08.562] Server  LOG      ✓ Ready in 6.2s
-[00:00:33.327] Server  LOG      ○ Compiling / ...
-[00:00:50.541] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:00.465] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:07.077] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:12.455] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:15.460] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:17.867] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:11.912] Server  LOG      ✓ Ready in 9.9s
+[00:00:33.228] Server  LOG      ○ Compiling / ...
+[00:00:44.661] Server  ERROR    ⨯ ./src/components/Home.tsx:3:20
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |                    ^^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+
+
+
+./src/components/Home.tsx:3:10
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |          ^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+
+
+[00:00:47.870] Server  LOG      ○ Compiling /_error ...
+[00:00:55.807] Browser ERROR   uncaughtError: Error: ./src/components/Home.tsx:3:20
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |                    ^^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+
+
+[00:00:56.975] Browser ERROR   ./src/components/Home.tsx:3:20
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |                    ^^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:00:56.975] Browser ERROR   ./src/components/Home.tsx:3:10
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |          ^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:00:56.975] Browser ERROR   ./src/components/Home.tsx:3:20
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |                    ^^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:00:56.975] Browser ERROR   ./src/components/Home.tsx:3:10
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |          ^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:01:10.914] Browser ERROR   ./src/components/Home.tsx:3:20
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |                    ^^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:01:10.914] Browser ERROR   ./src/components/Home.tsx:3:10
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |          ^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:01:12.408] Browser ERROR   ./src/components/Home.tsx:3:20
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |                    ^^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:01:12.408] Browser ERROR   ./src/components/Home.tsx:3:10
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |          ^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:01:12.786] Browser ERROR   ./src/components/Home.tsx:3:20
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |                    ^^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:01:12.786] Browser ERROR   ./src/components/Home.tsx:3:10
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |          ^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:01:17.376] Server  ERROR    ⨯ ./src/components/Home.tsx:3:20
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |                    ^^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+
+
+
+./src/components/Home.tsx:3:10
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |          ^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+
+
+[00:01:18.319] Browser ERROR   uncaughtError: Error: ./src/components/Home.tsx:3:20
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |                    ^^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+
+
+[00:01:18.550] Browser ERROR   ./src/components/Home.tsx:3:20
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |                    ^^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:01:18.550] Browser ERROR   ./src/components/Home.tsx:3:10
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |          ^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:01:18.656] Browser ERROR   ./src/components/Home.tsx:3:20
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |                    ^^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:01:18.656] Browser ERROR   ./src/components/Home.tsx:3:10
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |          ^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:02:56.790] Browser ERROR   ./src/components/Home.tsx:3:20
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |                    ^^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:02:56.790] Browser ERROR   ./src/components/Home.tsx:3:10
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |          ^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:02:56.911] Browser ERROR   ./src/components/Home.tsx:3:20
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |                    ^^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:02:56.911] Browser ERROR   ./src/components/Home.tsx:3:10
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |          ^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:03:23.571] Browser ERROR   ./src/components/Home.tsx:3:20
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |                    ^^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:03:23.571] Browser ERROR   ./src/components/Home.tsx:3:10
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |          ^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:03:23.692] Browser ERROR   ./src/components/Home.tsx:3:20
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |                    ^^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:03:23.692] Browser ERROR   ./src/components/Home.tsx:3:10
+Ecmascript file had an error
+  1 | import Image from 'next/image';
+  2 | import { Button } from './ui/Button';
+> 3 | import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
+    |          ^^^^^^^^
+  4 |
+  5 | export const Home = () => {
+  6 |   const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/Home.tsx
+    ./src/app/page.tsx
+[00:04:32.269] Server  LOG      ✓ Compiled in 2.6s
+[00:04:39.638] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:46.098] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:49.401] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:53.606] Server  LOG      ○ Compiling /donar ...
+[00:04:56.481] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior

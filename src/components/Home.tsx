@@ -1,38 +1,50 @@
+'use client';
 import Image from 'next/image';
 import { Button } from './ui/Button';
+import { useState, useEffect } from 'react'; // <-- IMPORTA useState y useEffect
 
 export const Home = () => {
+  const [isIOS, setIsIOS] = useState(false); // <-- NUEVO ESTADO
+
+  useEffect(() => {
+    // Esta detección solo corre en el cliente (navegador)
+    const userAgent = typeof window.navigator === 'undefined' ? '' : window.navigator.userAgent;
+    const isIOSDevice = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+    setIsIOS(isIOSDevice);
+  }, []);
+
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden">
-      {/* Background con overlay más oscuro para contraste */}
-        {/* Video de fondo con overlay */}
-        <div className="absolute inset-0 z-0">
-        <video
-        autoPlay
-        loop
-        muted
-        suppressHydrationWarning
-        poster="/images/backgrounds/home-poster.png"
-        className="object-cover w-full h-full"
-        >
-        <source src="/images/backgrounds/home.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-black/50" />
-        </div>
+      {/* Fondo con overlay */}
+      <div className="absolute inset-0 z-0">
+        {isIOS ? ( 
+          <Image
+            src="/images/backgrounds/home-poster.png" 
+            alt="Fondo estático"
+            fill
+            priority
+            className="object-cover"
+          />
+        ) : (
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            suppressHydrationWarning
+            poster="/images/backgrounds/home-poster.png"
+            className="w-full h-full object-cover"
+          >
+            <source src="/images/backgrounds/home.mp4" type="video/mp4" />
+            {/* <source src="/images/backgrounds/home.webm" type="video/webm" /> */}
+            Tu navegador no soporta el tag de video.
+          </video>
+        )}
+        <div className="absolute inset-0 bg-black/50 z-10" />
+      </div>
 
-        {/*<Image
-          src="/images/backgrounds/home.gif"
-          alt="Fondo animado de una red neuronal conectando ideas."
-          fill
-          priority
-          className="object-cover"
-          // unoptimized // Eliminado para permitir la optimización de Next.js
-        />
-        <div className="absolute inset-0 bg-black/50" />
-      </div> */}
-      
       {/* Contenido principal - con el ajuste vertical que hicimos */}
-      <div className="container relative z-10 flex flex-col items-center px-4 text-center transform translate-y-16">
+      <div className="container relative z-20 flex flex-col items-center px-4 text-center transform translate-y-16">
         {/* Título nuevo con degradado de color */}
         <h1 className="mb-12 text-7xl font-bold tracking-tighter text-transparent drop-shadow-lg md:text-9xl 
                        bg-clip-text bg-gradient-to-r from-primary to-accent">

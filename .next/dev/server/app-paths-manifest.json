@@ -1,3 +1,4 @@
 {
+  "/donar/page": "app/donar/page.js",
   "/page": "app/page.js"
 }
